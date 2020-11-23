@@ -11,6 +11,16 @@ public class Array {
 		{
 			a[j] = r.nextInt(25);
 		}
+		
+		try 
+		{
+			System.out.println(a[26]);
+		}
+		catch(Exception e)
+		{
+			System.out.println("Maximun index is 24 ..!!");
+		}
+		
 		for(int i : a)
 		{
 			System.out.println(i + " ");

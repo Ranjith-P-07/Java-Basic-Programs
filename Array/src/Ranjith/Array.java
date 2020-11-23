@@ -1,15 +1,16 @@
 package Ranjith;
+import java.util.Random;
 
 public class Array {
 
 	public static void main(String[] args) {
-		int a[] = new int [5];
-		a[0] = 1;
-		a[1] = 2;
-		a[2] = 3;
-		a[3] = 4;
-		a[4] = 5;
+		int a[] = new int [25];
+		Random r = new Random();
 		
+		for(int j=0;j<a.length;j++)
+		{
+			a[j] = r.nextInt(25);
+		}
 		for(int i : a)
 		{
 			System.out.println(i + " ");
